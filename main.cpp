@@ -1,6 +1,14 @@
 #include <iostream>
+#include "LinkedList.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    LinkedList *listOne = new LinkedList(10);
+    listOne->PrintList();
+
+    listOne->GetHead();
+    listOne->GetTail();
+    listOne->GetLength();
+
     return 0;
 }
